@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mmm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="i.am.edgedeveloper.tipcalculator.TipActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        tools:text="10%"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintRight_toLeftOf="@+id/button2"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="13dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        tools:text="Tip"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        tools:text="$0.00"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="@+id/textView7"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        tools:text="$150.00"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        tools:text="Bill Amount"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText2"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="hello"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        tools:text="Percent"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        tools:text="Total"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:text="-"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:id="@+id/button2"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="193dp"/>
+
+    <Button
+        android:text="+"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText2"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        android:layout_width="88dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp"/>
+</android.support.constraint.ConstraintLayout>

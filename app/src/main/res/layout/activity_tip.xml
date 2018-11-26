@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="i.am.edgedeveloper.tipcalculator.TipActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center|top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/marginBottom4layouts">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Amount"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="20sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bill"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/billEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottom4layouts">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Percent"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="55sp"
+                    android:id="@+id/textView"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="10%"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="@dimen/marginBottom4layouts"
+                    android:id="@+id/editText"/>
+
+                <Button
+                android:layout_width="55sp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/colorBlack"/>
+
+                <Button
+                    android:layout_width="55sp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/button"
+                    android:onClick="button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tip"
+                    android:layout_marginRight="102sp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/textView2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="$0.00"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tip"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="87sp"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="$0.00"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/totalField"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
